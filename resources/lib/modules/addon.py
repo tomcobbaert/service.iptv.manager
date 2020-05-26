@@ -218,7 +218,7 @@ class Addon:
         sock.listen(1)
         return sock
 
-    def _wait_for_data(self, sock, timeout=10):
+    def _wait_for_data(self, sock, timeout=30):
         """ Wait for data to arrive on the socket """
         # Set a connection timeout
         # The remote and should connect back as soon as possible so we know that the request is being processed
